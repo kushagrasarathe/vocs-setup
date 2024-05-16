@@ -20,9 +20,17 @@ Local variables are stored in memory and are not stored on the blockchain. This 
 
 Here's a simple example of a contract with only local variables:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/variables/src/local_variables.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/variables/src/local_variables.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/variables/src/local_variables.cairo:tests]
+```
+
+:::
 
 ## Storage Variables
 
@@ -34,9 +42,17 @@ On the other hand, you can read state variables, for free, without any transacti
 
 Here's a simple example of a contract with one storage variable:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/variables/src/storage_variables.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/variables/src/storage_variables.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/variables/src/storage_variables.cairo:tests]
+```
+
+:::
 
 ## Global Variables
 
@@ -46,6 +62,14 @@ In Starknet, you can access global variables by using specific functions from th
 
 For example, the `get_caller_address` function returns the address of the caller of the current transaction, and the `get_contract_address` function returns the address of the current contract.
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/variables/src/global_variables.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/variables/src/global_variables.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/variables/src/global_variables.cairo:tests]
+```
+
+:::

@@ -19,9 +19,17 @@ ByteArrays are declared with double quotes, like this: `"Hello, World!"`.
 
 They can be stored in the contract's storage and passed as arguments to entrypoints.
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/bytearray/src/bytearray.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/bytearray/src/bytearray.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/bytearray/src/bytearray.cairo:tests]
+```
+
+:::
 
 ### Operations
 
