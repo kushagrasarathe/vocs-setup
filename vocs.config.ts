@@ -63,10 +63,80 @@ export default defineConfig({
               text: "1.13. Documentation",
               link: "/ch00/basics/documentation",
             },
-            // {
-            //   text: "",
-            //   link: "/ch00/basics/",
-            // },
+          ],
+        },
+        {
+          text: "2. Deploy and interact with contracts",
+          link: "/ch00/interacting/interacting",
+          collapsed: true,
+          items: [
+            {
+              text: "2.1. Contract interfaces and Traits generation",
+              link: "/ch00/interacting/interfaces-traits",
+            },
+            {
+              text: "2.2. Calling other contracts",
+              link: "/ch00/interacting/calling_other_contracts",
+            },
+            {
+              text: "2.3. Factory pattern",
+              link: "/ch00/interacting/factory",
+            },
+          ],
+        },
+        {
+          text: "3. Testing contracts",
+          link: "/ch00/testing/contract-testing.html",
+        },
+        {
+          text: "4. Cairo cheatsheet",
+          link: "/ch00/cairo_cheatsheet/cairo_cheatsheet",
+          collapsed: true,
+          items: [
+            {
+              text: "4.1. Felt",
+              link: "/ch00/cairo_cheatsheet/felt",
+            },
+            {
+              text: "4.2. LegacyMap",
+              link: "/ch00/cairo_cheatsheet/mapping",
+            },
+            {
+              text: "4.3. Arrays",
+              link: "/ch00/cairo_cheatsheet/arrays",
+            },
+            {
+              text: "4.4. loop",
+              link: "/ch00/cairo_cheatsheet/loop",
+            },
+            {
+              text: "4.5. while",
+              link: "/ch00/cairo_cheatsheet/while",
+            },
+            {
+              text: "4.6. if let",
+              link: "/ch00/cairo_cheatsheet/if_let",
+            },
+            {
+              text: "4.7. while let",
+              link: "/ch00/cairo_cheatsheet/while_let",
+            },
+            {
+              text: "4.8. Match",
+              link: "/ch00/cairo_cheatsheet/match",
+            },
+            {
+              text: "4.9. Tuples",
+              link: "/ch00/cairo_cheatsheet/tuples",
+            },
+            {
+              text: "4.10. Struct",
+              link: "/ch00/cairo_cheatsheet/struct",
+            },
+            {
+              text: "4.11. Type casting",
+              link: "/ch00/cairo_cheatsheet/type_casting",
+            },
           ],
         },
       ],

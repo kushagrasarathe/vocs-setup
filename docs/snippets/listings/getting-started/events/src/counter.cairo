@@ -95,10 +95,12 @@ mod tests {
         assert_eq!(state.counter.read(), amount);
 
         // Notice the order: the first event emitted is the first to be popped.
+        // [!region test_events]
         assert_eq!(
             starknet::testing::pop_log(contract_address),
             Option::Some(Event::CounterIncreased(CounterIncreased { amount }))
         );
+        // [!endregion test_events]
 
         assert_eq!(
             starknet::testing::pop_log(contract_address),

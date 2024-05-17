@@ -15,15 +15,31 @@ In summary, there's two ways to handle interfaces:
 
 ## Explicit interface
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/interfaces_traits/src/explicit.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/explicit.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/explicit.cairo:tests]
+```
+
+:::
 
 ## Implicit interface
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/interfaces_traits/src/implicit.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/implicit.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/implicit.cairo:tests]
+```
+
+:::
 
 > Note: You can import an implicitly generated contract interface with `use contract::{GeneratedContractInterface}`. However, the `Dispatcher` will not be generated automatically.
 
@@ -32,6 +48,14 @@ In summary, there's two ways to handle interfaces:
 You can also use `#[generate_trait]` for your internal functions.
 Since this trait is generated in the context of the contract, you can define pure functions as well (functions without the `self` parameter).
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/interfaces_traits/src/implicit_internal.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/implicit_internal.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/interfaces_traits/src/implicit_internal.cairo:tests]
+```
+
+:::

@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Felt252
 
 Felt252 is a fundamental data type in Cairo from which all other data types are derived.
@@ -6,5 +13,5 @@ Felt252 can also be used to store [short string representations](../basics/bytea
 For example:
 
 ```rust
-{{#include ../../../listings/getting-started/cairo_cheatsheet/src/felt_example.cairo:sheet}}
+// [!include ~/snippets/listings/getting-started/cairo_cheatsheet/src/felt_example.cairo:sheet]
 ```

@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Arrays
 
 Arrays are collections of elements of the same type.
@@ -20,5 +27,5 @@ trait ArrayTrait<T> {
 For example:
 
 ```rust
-{{#include ../../../listings/getting-started/cairo_cheatsheet/src/array_example.cairo}}
+// [!include ~/snippets/listings/getting-started/cairo_cheatsheet/src/array_example.cairo]
 ```

@@ -1,6 +1,6 @@
 # Factory Pattern
 
-The factory pattern is a well known pattern in object oriented programming. It provides an abstraction on how to instantiate a class. 
+The factory pattern is a well known pattern in object oriented programming. It provides an abstraction on how to instantiate a class.
 
 In the case of smart contracts, we can use this pattern by defining a factory contract that have the sole responsibility of creating and managing other contracts.
 
@@ -16,9 +16,17 @@ Using the factory pattern, we can deploy multiple instances of the same contract
 
 Here's a minimal example of a factory contract that deploy the `SimpleCounter` contract:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/factory/src/simple_factory.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/factory/src/simple_factory.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/factory/src/simple_factory.cairo:tests]
+```
+
+:::
 
 This factory can be used to deploy multiple instances of the `SimpleCounter` contract by calling the `create_counter` and `create_counter_at` functions.
 

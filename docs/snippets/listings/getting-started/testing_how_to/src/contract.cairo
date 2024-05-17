@@ -40,7 +40,7 @@ pub mod SimpleContract {
 }
 // [!endregion contract]
 
-// ANCHOR: tests
+// [!region tests]
 #[cfg(test)]
 mod tests {
     // Import the interface and dispatcher to be able to interact with the contract.
@@ -119,10 +119,9 @@ mod tests {
     fn test_deploy_gas() {
         deploy(10);
     }
-}
-// ANCHOR_END: tests
+}// [!endregion tests]
 
-// ANCHOR: tests_with_state
+// [!region tests_with_state]
 #[cfg(test)]
 mod tests_with_states {
     // Only import the contract
@@ -225,6 +224,5 @@ mod tests_with_states {
         assert_eq!(contract.get_value(), new_value);
     }
 }
-// ANCHOR_END: tests
-
+}// [!endregion tests_with_state]
 

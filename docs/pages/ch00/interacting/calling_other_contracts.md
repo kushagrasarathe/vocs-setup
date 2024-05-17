@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Calling other contracts
 
 There are two different ways to call other contracts in Cairo.
@@ -11,12 +18,28 @@ In order to call other contracts using dispatchers, you will need to define the 
 
 Here's the `Callee` contract interface and implementation:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/calling_other_contracts/src/caller.cairo:callee_contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/calling_other_contracts/src/caller.cairo:callee_contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/calling_other_contracts/src/caller.cairo:tests]
+```
+
+:::
 
 The following `Caller` contract use the `Callee` interface to call the `Callee` contract:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/calling_other_contracts/src/caller.cairo:caller_contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/calling_other_contracts/src/caller.cairo:caller_contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/calling_other_contracts/src/caller.cairo:tests]
+```
+
+:::

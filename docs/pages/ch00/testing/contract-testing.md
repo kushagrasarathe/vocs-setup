@@ -5,13 +5,13 @@ Testing plays a crucial role in software development, especially for smart contr
 Let's start with a simple smart contract as an example:
 
 ```rust
-{{#include ../../../listings/getting-started/testing_how_to/src/contract.cairo:contract}}
+// [!include ~/snippets/listings/getting-started/testing_how_to/src/contract.cairo:contract]
 ```
 
 Now, take a look at the tests for this contract:
 
 ```rust
-{{#include ../../../listings/getting-started/testing_how_to/src/contract.cairo:tests}}
+// [!include ~/snippets/listings/getting-started/testing_how_to/src/contract.cairo:tests]
 ```
 
 To define our test, we use scarb, which allows us to create a separate module guarded with `#[cfg(test)]`. This ensures that the test module is only compiled when running tests using `scarb test`.
@@ -40,7 +40,7 @@ This can be useful for testing internal functions, or specific state mutations t
 Here is an example of how to do the same previous test using the contract state:
 
 ```rust
-{{#include ../../../listings/getting-started/testing_how_to/src/contract.cairo:tests_with_state}}
+// [!include ~/snippets/listings/getting-started/testing_how_to/src/contract.cairo:tests_with_state]
 ```
 
 ## Testing events
@@ -50,7 +50,7 @@ In order to test events, you need to use the `starknet::pop_log` function. If th
 See the test for the [Events](../basics/events.md) section:
 
 ```rust
-{{#rustdoc_include ../../../listings/getting-started/events/src/counter.cairo:test_events}}
+// [!include ~/snippets/listings/getting-started/events/src/counter.cairo:test_events]
 ```
 
 ## Starknet Corelib Testing Module
