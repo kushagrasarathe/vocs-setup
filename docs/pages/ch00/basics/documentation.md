@@ -1,3 +1,11 @@
+---
+showOutline: false
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Documentation
 
 It's important to take the time to document your code. It will helps developers and users to understand the contract and its functionalities.

@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Mappings
 
 Maps are a key-value data structure used to store data within a smart contract. In Cairo they are implemented using the `LegacyMap` type. It's important to note that the `LegacyMap` type can only be used inside the `Storage` struct of a contract and that it can't be used elsewhere.

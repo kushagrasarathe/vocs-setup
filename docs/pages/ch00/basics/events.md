@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Events
 
 Events are a way to emit data from a contract. All events must be defined in the `Event` enum, which must be annotated with the `#[event]` attribute.

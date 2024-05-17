@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Simple Counter
 
 We now understand how to create a contract with state variables and functions. Let's create a simple counter contract that increments and decrements a counter.
