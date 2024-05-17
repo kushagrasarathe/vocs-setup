@@ -17,22 +17,46 @@ The `assert_eq!`, `assert_ne!`, `assert_lt!`, `assert_le!`, `assert_gt!` and `as
 
 Here's a simple example that demonstrates the use of these functions:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/errors/src/simple_errors.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/errors/src/simple_errors.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/errors/src/simple_errors.cairo:tests]
+```
+
+:::
 
 ## Custom errors
 
 You can make error handling easier by defining your error codes in a specific module.
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/errors/src/custom_errors.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/errors/src/custom_errors.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/errors/src/custom_errors.cairo:tests]
+```
+
+:::
 
 ## Vault example
 
 Here's another example that demonstrates the use of errors in a more complex contract:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/errors/src/vault_errors.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/errors/src/vault_errors.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/errors/src/vault_errors.cairo:tests]
+```
+
+:::

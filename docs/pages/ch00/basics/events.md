@@ -5,6 +5,14 @@ An event is defined as a struct that derives the `#[starknet::Event]` trait. The
 
 Here's a simple example of a contract using events that emit an event each time a counter is incremented by the "increment" function:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/events/src/counter.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/events/src/counter.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/events/src/counter.cairo:tests]
+```
+
+:::

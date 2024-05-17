@@ -6,6 +6,14 @@ Thankfully, we can just derive the `Serde` trait for our custom type.
 The purpose is to only show the capability of using custom types as inputs and outputs in contract calls.
 We are not employing getters and setters for managing the contract's state in this example for simplicity.
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/custom_type_serde/src/contract.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/custom_type_serde/src/contract.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/custom_type_serde/src/contract.cairo:tests]
+```
+
+:::

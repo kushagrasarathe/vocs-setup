@@ -1,10 +1,10 @@
+// [!region contract]
 #[starknet::interface]
 pub trait ISerdeCustomType<TContractState> {
     fn person_input(ref self: TContractState, person: Person);
     fn person_output(self: @TContractState) -> Person;
 }
 
-// [!region contract]
 // Deriving the `Serde` trait allows us to use
 // the Person type as an entrypoint parameter and return value
 #[derive(Drop, Serde)]
@@ -31,6 +31,7 @@ pub mod SerdeCustomType {
 }
 // [!endregion contract]
 
+// [!region tests]
 #[cfg(test)]
 mod tests {
     use super::{
@@ -71,3 +72,4 @@ mod tests {
         contract.person_input(expected_person);
     }
 }
+// [!endregion tests]

@@ -46,6 +46,7 @@ pub mod ImplicitInternalContract {
 }
 // [!endregion contract]
 
+// [!region tests]
 #[cfg(test)]
 mod tests {
     use super::{
@@ -72,3 +73,4 @@ mod tests {
         assert_eq!(contract.get_value(), initial_value + add_value);
     }
 }
+// [!endregion tests]

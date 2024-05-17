@@ -24,6 +24,14 @@ Internal functions can't be called externally, but the same principle applies re
 
 Let's take a look at a simple example contract to see these in action:
 
-```rust
-{{#rustdoc_include ../../../listings/getting-started/visibility/src/visibility.cairo:contract}}
+:::code-group
+
+```rust [contract]
+// [!include ~/snippets/listings/getting-started/visibility/src/visibility.cairo:contract]
 ```
+
+```rust [tests]
+// [!include ~/snippets/listings/getting-started/visibility/src/visibility.cairo:tests]
+```
+
+:::

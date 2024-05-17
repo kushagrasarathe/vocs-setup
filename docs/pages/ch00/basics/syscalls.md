@@ -7,6 +7,7 @@ Some of the OS functionalities are exposed to smart contracts through the use of
 Syscalls return a `SyscallResult` which is either `Sucess` of `Failure`, allowing the contract to handle errors.
 
 Here's the available syscalls:
+
 - [get_block_hash](#get_block_hash)
 - [get_execution_info](#get_execution_info)
 - [call_contract](#call_contract)
@@ -91,6 +92,7 @@ pub struct TxInfo {
 ```
 
 `starknet::info` provides helper functions to access the `ExecutionInfo` fields in a more convenient way:
+
 - `get_execution_info() -> Box<ExecutionInfo>`
 - `get_caller_address() -> ContractAddress`
 - `get_contract_address() -> ContractAddress`
@@ -133,7 +135,7 @@ The success result is a tuple containing the deployed contract address and the r
 Example of the usage of the `deploy` syscall from the [Factory pattern](../interacting/factory.md):
 
 ```rust
-{{#rustdoc_include ../../../listings/getting-started/factory/src/simple_factory.cairo:deploy}}
+// [!include ~/snippets/listings/getting-started/factory/src/simple_factory.cairo:deploy]
 ```
 
 #### emit_event
@@ -149,7 +151,7 @@ Emit an event with the given `keys` and `data`.
 Example of the usage of the `emit_event` syscall from the [Events](../basics/events.md) chapter:
 
 ```rust
-{{#rustdoc_include ../../../listings/getting-started/events/src/counter.cairo:emit}}
+// [!include ~/snippets/listings/getting-started/events/src/counter.cairo:emit]
 ```
 
 <!-- TODO Add a more low-level example ? -->
@@ -202,7 +204,7 @@ Replace the class of the calling contract with the class `class_hash`.
 This is used for contract upgrades. Here's an example from the [Upgradeable Contract](../../ch01/upgradeable_contract.md):
 
 ```rust
-{{#rustdoc_include ../../../listings/applications/upgradeable_contract/src/upgradeable_contract_v0.cairo:upgrade}}
+// [!include ~/snippets/listings/applications/upgradeable_contract/src/upgradeable_contract_v0.cairo:upgrade]
 ```
 
 The new class code will only be used for future calls to the contract.
@@ -267,5 +269,5 @@ mod gas_costs {
 }
 ```
 
-Specific gas cost are defined in this [file](https://github.com/starkware-libs/cairo/blob/ec14a5e2c484190ff40811c973a72a53739cedb7/crates/cairo-lang-runner/src/casm_run/mod.rs#L333) 
+Specific gas cost are defined in this [file](https://github.com/starkware-libs/cairo/blob/ec14a5e2c484190ff40811c973a72a53739cedb7/crates/cairo-lang-runner/src/casm_run/mod.rs#L333)
 -->

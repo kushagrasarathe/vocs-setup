@@ -63,10 +63,10 @@ export default defineConfig({
               text: "1.13. Documentation",
               link: "/ch00/basics/documentation",
             },
-            {
-              text: "",
-              link: "/ch00/basics/",
-            },
+            // {
+            //   text: "",
+            //   link: "/ch00/basics/",
+            // },
           ],
         },
       ],
