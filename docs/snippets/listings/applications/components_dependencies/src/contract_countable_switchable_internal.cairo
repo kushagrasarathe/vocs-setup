@@ -35,6 +35,7 @@ pub mod CountableContract {
 }
 // [!endregion contract]
 
+// [!region tests]
 #[cfg(test)]
 mod tests {
     use super::CountableContract;
@@ -108,3 +109,4 @@ mod tests {
         assert(counter.get() == 3, 'Counter did not increment');
     }
 }
+// [!endregion tests]

@@ -28,6 +28,7 @@ pub mod SwitchContract {
 }
 // [!endregion contract]
 
+// [!region tests]
 #[cfg(test)]
 mod tests {
     use components::switchable::switchable_component::SwitchableInternalTrait;
@@ -82,3 +83,4 @@ mod tests {
         assert(state.is_on() == false, 'The switch should be off');
     }
 }
+// [!endregion tests]

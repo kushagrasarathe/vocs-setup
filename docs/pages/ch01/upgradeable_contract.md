@@ -1,3 +1,10 @@
+---
+content:
+  horizontalPadding: 50px
+  width: 100%
+  verticalPadding: 30px
+---
+
 # Upgradeable Contract
 
 In Starknet, contracts are divided into two parts: contract classes and contract
@@ -23,9 +30,9 @@ To illustrate this concept, let's consider an example with two contracts: `Upgra
 Start by deploying `UpgradeableContract_V0` as the initial version. Next, send a transaction that invokes the `upgrade` function, with the class hash of `UpgradeableContract_V1` as parameter to upgrade the class hash of the deployed contract to the `UpgradeableContract_V1` one. Then, call the `version` method on the contract to see that the contract was upgraded to the V1 version.
 
 ```rust
-{{#include ../../listings/applications/upgradeable_contract/src/upgradeable_contract_v0.cairo:contract}}
+// [!include ~/snippets/listings/applications/upgradeable_contract/src/upgradeable_contract_v0.cairo:contract]
 ```
 
 ```rust
-{{#include ../../listings/applications/upgradeable_contract/src/upgradeable_contract_v1.cairo}}
+// [!include ~/snippets/listings/applications/upgradeable_contract/src/upgradeable_contract_v1.cairo]
 ```

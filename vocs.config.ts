@@ -2,6 +2,12 @@ import { defineConfig } from "vocs";
 
 export default defineConfig({
   title: "Starknet by Example",
+  topNav: [
+    {
+      text: "GitHub",
+      link: "https://github.com/NethermindEth/StarknetByExample",
+    },
+  ],
   sidebar: [
     {
       text: "Getting Started",
@@ -86,7 +92,7 @@ export default defineConfig({
         },
         {
           text: "3. Testing contracts",
-          link: "/ch00/testing/contract-testing.html",
+          link: "/ch00/testing/contract-testing",
         },
         {
           text: "4. Cairo cheatsheet",
@@ -138,6 +144,92 @@ export default defineConfig({
               link: "/ch00/cairo_cheatsheet/type_casting",
             },
           ],
+        },
+      ],
+    },
+    {
+      text: "Components",
+      items: [
+        {
+          text: "5. Components How-To",
+          link: "/components/how_to",
+        },
+        {
+          text: "6. Components Dependencies",
+          link: "/components/dependencies",
+        },
+        {
+          text: "7. Storage Collisions",
+          link: "/components/collisions",
+        },
+        {
+          text: "8. Ownable",
+          link: "/components/ownable",
+        },
+      ],
+    },
+    {
+      text: "Applications",
+      items: [
+        {
+          text: "9. Upgradeable Contract",
+          link: "/ch01/upgradeable_contract",
+        },
+        {
+          text: "10. Defi Vault",
+          link: "/ch01/simple_vault",
+        },
+        {
+          text: "11. ERC20 Token",
+          link: "/ch01/erc20",
+        },
+        {
+          text: "12. Constant Product AMM",
+          link: "/ch01/constant-product-amm",
+        },
+      ],
+    },
+    {
+      text: "Advanced concepts",
+      items: [
+        {
+          text: "13. Writing to any storage slot",
+          link: "/ch02/write_to_any_slot",
+        },
+        {
+          text: "14. Storing Arrays",
+          link: "/ch02/storing_arrays",
+        },
+        {
+          text: "15. Struct as mapping key",
+          link: "/ch02/struct-mapping-key",
+        },
+        {
+          text: "16. Hashing",
+          link: "/ch02/hashing",
+        },
+        {
+          text: "17. Optimisations",
+          link: "/ch02/optimisations/optimisations",
+          collapsed: false,
+          items: [
+            {
+              text: "17.1. Storage Optimisations",
+              link: "/ch02/optimisations/store_using_packing",
+            },
+          ],
+        },
+        {
+          text: "18. List",
+          link: "/ch02/list",
+        },
+        {
+          text: "19. Plugins",
+          link: "/ch02/plugins",
+        },
+        {
+          text: "20. Signature Verification",
+          link: "/ch02/signature_verification",
         },
       ],
     },

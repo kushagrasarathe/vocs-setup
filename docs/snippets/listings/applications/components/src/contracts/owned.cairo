@@ -41,6 +41,7 @@ pub mod OwnedContract {
 }
 // [!endregion contract]
 
+// [!region tests]
 #[cfg(test)]
 mod tests {
     use core::num::traits::Zero;
@@ -172,3 +173,4 @@ mod tests {
         contract.do_something();
     }
 }
+// [!endregion tests]
